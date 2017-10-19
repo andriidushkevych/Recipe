@@ -7,9 +7,5 @@ import { HeaderComponent } from './header/header.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  shoppingView = true;
 
-  onNavigate(boolVal: boolean) {
-    this.shoppingView = boolVal;
-  }
 }

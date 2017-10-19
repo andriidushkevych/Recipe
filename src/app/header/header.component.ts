@@ -1,9 +1,7 @@
 import {
   Component,
-  OnInit,
-  Output,
-  ElementRef,
-  EventEmitter } from '@angular/core';
+  OnInit
+} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +9,7 @@ import {
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  @Output() shoppingView = new EventEmitter<boolean>();
+
 
   constructor() { }
 
@@ -19,12 +17,5 @@ export class HeaderComponent implements OnInit {
 
   }
 
-  onMenuShoppingClick() {
-    this.shoppingView.emit(true);
-  }
-
-  onMenuRecipeClick() {
-    this.shoppingView.emit(false);
-  }
 
 }
